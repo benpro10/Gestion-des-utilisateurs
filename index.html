@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Gestion des utilisateurs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestion des utilisateurs</h1>
+      <form id="userForm">
+        <input type="text" id="name" placeholder="Nom" class="inputAddUser"/>
+        <input type="email" id="email" placeholder="Email" class="inputAddUser" />
+        <button type="button" id="addUserButton">Ajouter utilisateur</button>
+      </form>
+      <div class="searchContainer">
+        <input
+          type="email"
+          id="searchEmail"
+          placeholder="Rechercher par e-mail ou par Nom"
+        />
+        <button type="button" id="searchUserButton">
+          Rechercher utilisateur
+        </button>
+      </div>
+    </div>
+
+    <ul id="userList"></ul>
+    <p id="searchResult"></p>
+  </body>
+  <script src="./index.js"></script>
+</html>
