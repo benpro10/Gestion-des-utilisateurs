@@ -61,9 +61,15 @@ function passwordValide(inputPwd) {
   } else return false;
 }
 
+function succussfullyMessage(succes){
+  message.style.display = "block";
+  message.style.color = "green";
+  message.textContent = succes;
+}
+
 function ErreurMessage(erreur) {
   message.style.display = "block";
-  message.style.color = "red";
+  message.style.color = "rgb(65, 218, 65)";
   message.textContent = erreur;
 }
 
@@ -76,8 +82,7 @@ btnAddUser.addEventListener("click", (e) => {
     if (nomValide(addNameUser.value)) {
         if (compteEmailvalide(addMailUser.value)) {
           if (passwordValide(password.value)) {
-            message.style.display = "none";
-            window.location.href = "listUser.html";
+            succussfullyMessage("L'utilisateur a été ajouter avec succès")
           } else ErreurMessage("Veillez entrez un mot de passe valide");
         } else ErreurMessage("Veillez entrez un mail correct");
       } else
