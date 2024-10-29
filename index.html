@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Gestion des utilisateurs</title>
   </head>
   <body>
@@ -17,8 +17,8 @@
       </form>
       <div class="searchContainer">
         <input
-          type="email"
-          id="searchEmail"
+          type="text"
+          id="searchEmailName"
           placeholder="Rechercher par e-mail ou par Nom" required
         />
         <button type="button" id="searchUserButton" >
@@ -26,9 +26,7 @@
         </button>
       </div>
     </div>
-
-    <ul id="userList"></ul>
     <p id="searchResult"></p>
   </body>
-  <script src="./index.js"></script>
+  <script src="./Javascript/index.js"></script>
 </html>
