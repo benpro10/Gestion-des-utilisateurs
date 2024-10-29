@@ -3,131 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Gestion des utilisateurs</title>
   </head>
   <body>
     <div class="container">
       <h1>Gestion des utilisateurs</h1>
       <form id="userForm">
-        <input type="text" id="name" placeholder="Nom" class="inputAddUser" required/>
-        <input type="email" id="email" placeholder="Email" class="inputAddUser" required/>
-        <input type="password" name="password" id="password" placeholder="Mot de passe" class="inputAddUser" required >
+        <input
+          type="text"
+          id="name"
+          placeholder="Nom"
+          class="inputAddUser"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="inputAddUser"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Mot de passe"
+          class="inputAddUser"
+          required
+        />
         <button type="button" id="addUserButton">Ajouter utilisateur</button>
+        <div class="validationPasswordMessage">
+          <p id="validationPasswordMessage1" class="spanVal">
+            *Mot de passe doit contenir au moins une majuscule
+          </p>
+          <p id="validationPasswordMessage2">
+            *Mot de passe doit contenir au moins une miniscule
+          </p>
+          <p id="validationPasswordMessage3">
+            *Mot de passe doit contenir au moins un chiffre
+          </p>
+          <p id="validationPasswordMessage4">
+            *Mot de passe doit contenir 5 caratères
+          </p>
+        </div>
       </form>
       <div class="searchContainer">
         <input
           type="text"
           id="searchEmailName"
-          placeholder="Rechercher par e-mail ou par Nom" required
+          placeholder="Rechercher par e-mail ou par Nom"
+          required
         />
-        <button type="button" id="searchUserButton" >
+        <button type="button" id="searchUserButton">
           Rechercher utilisateur
         </button>
       </div>
       <div class="listUser">
-        <ol id="userList">
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-         <li></li>
-        </ol>
+        <h4>Liste des utilisateurs</h4>
+        <ol id="userList"></ol>
       </div>
     </div>
     <p id="searchResult"></p>
