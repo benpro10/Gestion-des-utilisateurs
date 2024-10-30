@@ -147,6 +147,10 @@ async function gererLaRecherche() {
   }
 }
 
+
+
+
+
 btnAddUser.addEventListener("click", (e) => {
   e.preventDefault();
 

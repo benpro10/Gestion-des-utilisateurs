@@ -137,3 +137,56 @@ p {
   border-radius: 5px;
   margin-bottom: 0.5rem;
 }
+
+
+
+/* MEDIA QUERY pour Tablette (768px à 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #userForm,
+  .searchContainer {
+    max-width: 70%; 
+  }
+
+  .listUser {
+    width: 80%; 
+  }
+}
+
+/* MEDIA QUERY pour Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem; 
+  }
+
+  #userForm,
+  .searchContainer {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .inputAddUser {
+    width: 95%; 
+  }
+
+  #addUserButton,
+  #searchUserButton {
+    width: 100%;
+  }
+
+  .listUser {
+    width: 100%; 
+  }
+
+  #userList {
+    padding: 0;
+    margin: 1rem 0;
+  }
+}
