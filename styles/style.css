@@ -138,23 +138,25 @@ p {
   margin-bottom: 0.5rem;
 }
 
-
-
 /* MEDIA QUERY pour Tablette (768px à 1024px) */
 @media (max-width: 1024px) {
   .container {
-    width: 90%; 
-    flex-direction: column; 
-    align-items: center; 
+    width: 90%;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 12rem;
   }
 
   #userForm,
   .searchContainer {
-    max-width: 70%; 
+    max-width: 70%;
   }
 
   .listUser {
-    width: 80%; 
+    width: 80%;
   }
 }
 
@@ -163,7 +165,7 @@ p {
   .container {
     width: 100%;
     padding: 1rem;
-    gap: 1.5rem; 
+    gap: 12rem;
   }
 
   #userForm,
@@ -173,7 +175,7 @@ p {
   }
 
   .inputAddUser {
-    width: 95%; 
+    width: 95%;
   }
 
   #addUserButton,
@@ -182,7 +184,7 @@ p {
   }
 
   .listUser {
-    width: 100%; 
+    width: 100%;
   }
 
   #userList {
